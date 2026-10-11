@@ -10,7 +10,7 @@ gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 gui.ResetOnSpawn = false
 
 local frame = Instance.new("Frame", gui)
-frame.Size = UDim2.new(0, 120, 0, 125)
+frame.Size = UDim2.new(0, 120, 0, 85)
 frame.Position = UDim2.new(0.5, -160, 0.5, -135)
 frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 frame.BorderSizePixel = 0
@@ -60,13 +60,13 @@ content.Size = UDim2.new(1, 0, 1, -30)
 content.BackgroundTransparency = 1
 
 -- AFK Button
-local AntiAfkButton = newBtn(content, "Auto AFK: OFF", UDim2.new(0, 100, 0, 20), UDim2.new(0, 10, 0, 45), Color3.fromRGB(180, 50, 50), UDim.new(0, 6))
+local AntiAfkButton = newBtn(content, "Auto AFK: OFF", UDim2.new(0, 100, 0, 20), UDim2.new(0, 10, 0, 20), Color3.fromRGB(180, 50, 50), UDim.new(0, 6))
 
 -- AFK Timer Label
 local AfkTimeLabel = Instance.new("TextLabel", content)
 AfkTimeLabel.Name = "AfkTimeLabel"
 AfkTimeLabel.Text = "AFK: 0:0:0"
-AfkTimeLabel.Size = UDim2.new(0, 70, 0, 20)
+AfkTimeLabel.Size = UDim2.new(0, 100, 0, 20)
 AfkTimeLabel.Position = UDim2.new(0, 10, 0, -5)
 AfkTimeLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 AfkTimeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
